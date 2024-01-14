@@ -36,7 +36,7 @@ docker exec -it <容器ID或容器名称> /bin/sh -c 'echo "172.29.0.2 api.iyuu.
 ##### 如果有有特殊情况无法工作，可尝试导入证书。
 ```
 docker cp iyuu.crt <容器ID或容器名称>:/usr/local/share/ca-certificates/iyuu.crt
-docker exec -it <容器ID或容器名称> /bin/sh -c ‘update-ca-certificates'
+docker exec -it <容器ID或容器名称> /bin/sh -c 'update-ca-certificates'
 ```
 
 #### 恢复则修改compose或hosts文件，删除添加的内容，重建或重启。
