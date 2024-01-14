@@ -9,7 +9,7 @@ git clone https://github.com/AisukaYuki/iyuuproxy.git
 cd ./iyuuproxy
 #运行iyuuproxy容器
 docker-compose up -d
-#查看ip
+#查看ip命令，也可在各docker管理器查看
 docker inspect iyuuproxy | grep IPAddress 
 ```
 ```
