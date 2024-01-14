@@ -3,6 +3,10 @@ services:
   iyuuproxy:
     container_name: iyuuproxy
     image: nginx:latest
+#容器互相访问，可不开放443端口。以免与其他应用冲突。
+#如需在局域网内其他设备使用，则需要开端口。
+#    ports:
+#      - 443:443
     volumes:
       - ./iyuu.conf:/etc/nginx/conf.d/iyuu.conf
       - ./iyuu.crt:/home/iyuu.crt

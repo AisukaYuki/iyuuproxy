@@ -1,8 +1,12 @@
 ### docker容器本地自签证书反代iyuu使用例
+
+容器互相访问，可不开放443端口。以免与其他应用冲突。
+如需在局域网内其他设备使用，则需要开端口。
+修改compose文件注释即可
 ```
 cd /iyuuproxy
 #运行iyuuproxy容器
-docker-compose up -d 
+docker-compose up -d
 #查看ip
 docker inspect iyuuproxy | grep IPAddress 
 ```
