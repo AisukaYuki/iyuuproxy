@@ -19,6 +19,7 @@ shell输出：
     "IPAddress": "172.29.0.2",
 ```
 如上ip为 **172.29.0.2**，修改iyuuplus的compose文件添加**extra_hosts**参数后重建,如：
+注：如果开启了443端口映射，则可以直接使用宿主ip。
 ```
 version: '3.4'
    services:
