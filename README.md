@@ -6,7 +6,7 @@
 
 ```
 git clone https://github.com/AisukaYuki/iyuuproxy.git
-cd /iyuuproxy
+cd ./iyuuproxy
 #运行iyuuproxy容器
 docker-compose up -d
 #查看ip
