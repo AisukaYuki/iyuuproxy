@@ -45,7 +45,7 @@ version: '3.4'
 或修改容器内 /etc/hosts 添加`172.29.0.2 api.iyuu.cn`
 ```
 docker exec -it <容器ID或容器名称> /bin/sh -c 'echo "172.29.0.2 api.iyuu.cn" >> /etc/hosts'
-#此方法容器重启后需要重新执行，建议将容器的/etc/hosts挂载为外部文件。重启容器不会失效。
+#此方法容器重启后需要重新执行，建议添加外部挂载文件替换容器的/etc/hosts。重启容器不会失效。
 ```
 #### 其他容器操作同理
 
