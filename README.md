@@ -36,4 +36,4 @@ docker cp iyuu.crt <容器ID或容器名称>:/usr/local/share/ca-certificates/iy
 docker exec -it <容器ID或容器名称> /bin/sh -c ‘update-ca-certificates'
 ```
 
-#### 恢复则修改compose或hosts文件，删除添加的内容，重启或重建。
+#### 恢复则修改compose或hosts文件，删除添加的内容，重建或重启。
