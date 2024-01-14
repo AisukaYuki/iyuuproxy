@@ -23,6 +23,7 @@ version: '3.4'
 
 ```
 或修改容器内 /etc/hosts 添加`172.29.0.2 api.iyuu.cn`其他容器同理
-``docker exec -it <容器ID或容器名称> /bin/sh -c 'echo "172.29.0.2 api.iyuu.cn" >> /etc/hosts'``
+
+```docker exec -it <容器ID或容器名称> /bin/sh -c 'echo "172.29.0.2 api.iyuu.cn" >> /etc/hosts'```
 
 
