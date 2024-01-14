@@ -13,7 +13,7 @@ docker-compose up -d
 docker inspect iyuuproxy | grep IPAddress 
 ```
 ```
-命令输出：
+shell输出：
  "SecondaryIPAddresses": null,
  "IPAddress": "",
     "IPAddress": "172.29.0.2",
