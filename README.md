@@ -18,9 +18,11 @@ version: '3.4'
         - 8787:8787
       volumes:
         - ./db:/IYUU/db
-      restart: unless-stopped```
+      restart: unless-stopped
+```
 或修改容器内 /etc/hosts 添加`172.29.0.2 api.iyuu.cn`其他容器同理
-```docker exec -it <容器ID或容器名称> /bin/sh -c 'echo "172.29.0.2 api.iyuu.cn" >> /etc/hosts'
+```
+docker exec -it <容器ID或容器名称> /bin/sh -c 'echo "172.29.0.2 api.iyuu.cn" >> /etc/hosts'
 ```
 ##### 一般来说，无需导入证书信任，修改完hosts，iyuu登录和mp认证即可正常工作。
 ###### 如果有有特殊情况无法工作，可尝试导入证书。
