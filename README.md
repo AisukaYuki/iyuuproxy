@@ -20,6 +20,8 @@ shell输出：
 ```
 如上ip为 **172.29.0.2**，修改iyuuplus的compose文件添加**extra_hosts**参数后重建,如：
 ##### 注：如果开启了443端口映射，则可以直接使用宿主ip。
+
+测试是否生效：`curl -k --resolve 'api.iyuu.cn:443:172.29.0.2' https://api.iyuu.cn`
 ```
 version: '3.4'
    services:
