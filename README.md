@@ -12,6 +12,11 @@ docker-compose up -d
 #查看ip
 docker inspect iyuuproxy | grep IPAddress 
 ```
+```
+            "SecondaryIPAddresses": null,
+            "IPAddress": "",
+                    "IPAddress": "172.29.0.2",
+```
 如ip为 **172.29.0.2**，修改iyuuplus的compose文件添加**extra_hosts**参数后重建,如：
 ```
 version: '3.4'
