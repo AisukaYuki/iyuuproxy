@@ -1,4 +1,4 @@
-### docker容器本地自签证书反代iyuu使用例
+## docker容器本地自签证书反代iyuu使用例
 
 容器互相访问，可不开放443端口。以免与其他应用冲突。
 
@@ -28,10 +28,11 @@ version: '3.4'
         - ./db:/IYUU/db
       restart: unless-stopped
 ```
-或修改容器内 /etc/hosts 添加`172.29.0.2 api.iyuu.cn`其他容器同理
+或修改容器内 /etc/hosts 添加`172.29.0.2 api.iyuu.cn`
 ```
 docker exec -it <容器ID或容器名称> /bin/sh -c 'echo "172.29.0.2 api.iyuu.cn" >> /etc/hosts'
 ```
+#### 其他容器同理
 #### 一般来说，无需导入证书信任，添加完hosts，iyuu登录和mp认证即可正常工作。
 ##### 如果有有特殊情况无法工作，可尝试导入证书。
 ```
