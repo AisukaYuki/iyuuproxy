@@ -1,0 +1,9 @@
+在iyuuproxy所在目录运行 docker-compose up -d 等待iyuuproxy运行
+
+执行 docker inspect iyuuproxy | grep IPAddress 查看ip
+
+例如ip为 172.29.0.2，回到上级目录修改iyuu的compose文件内ip，然后运行docker-compose up -d 运行或重建iyuu
+
+其他容器同理compose文件添加
+    extra_hosts: 
+      - "api.iyuu.cn:172.29.0.2"

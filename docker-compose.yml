@@ -1,0 +1,12 @@
+version: '3.4'
+services:
+  iyuuproxy:
+    container_name: iyuuproxy
+    image: nginx:latest
+    ports:
+      - 443:443
+    volumes:
+      - ./iyuu.conf:/etc/nginx/conf.d/iyuu.conf
+      - ./iyuu.crt:/home/iyuu.crt
+      - ./iyuu.key:/home/iyuu.key
+    restart: always
