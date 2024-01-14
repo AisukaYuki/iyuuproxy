@@ -5,6 +5,7 @@
 如需在局域网内其他设备使用，如群晖套件、macvlan容器、win电脑等，则需要开端口。修改compose文件注释即可。
 
 ```
+git clone https://github.com/AisukaYuki/iyuuproxy.git
 cd /iyuuproxy
 #运行iyuuproxy容器
 docker-compose up -d
