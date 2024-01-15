@@ -30,7 +30,7 @@ curl -k --resolve 'api.iyuu.cn:443:172.29.0.2' https://api.iyuu.cn
 #返回json内容则成功
 {"ret":200,"data":{"title":"Welcome IYUU","time":1705208847,"ip":"192.168.0.1","userAgent":"curl\/7.81.0","group":"QQ群：859882209, 931954050, 924099912, 586608623"},"msg":"","version":"2.0.0"}
 ```
-### 使用方法：
+### 使用方法：以iyuuplus为例
 修改iyuuplus的compose文件添加**extra_hosts**参数后重建,如：
 ```
 version: '3.4'
